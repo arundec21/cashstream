@@ -1,0 +1,20 @@
+ID: CASHSTREAM
+_schema-version: '2.0'
+description: Cash Stream
+version: 0.0.1
+
+modules:
+ - name: DB_CS_COMMON
+   type: hdb
+   path: DB_CS_COMMON
+   requires:
+    - name: hdi_DB_CS_COMMON
+
+resources:
+ - name: hdi_DB_CS_COMMON
+   parameters:
+      config:
+         schema: S_CASHSTREAM
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container

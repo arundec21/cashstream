@@ -1,0 +1,10 @@
+{
+  "CASHSTREAM.DB_CS_COMMON.DB_OBJECTS.VIRTUAL_TABLES::VT_CS_ACDOCA": {
+    "target": {
+      "remote": "FDS_SDI",
+      "database": "FDH",
+      "schema": "SAPABAP1",
+      "object": "ACDOCA"
+    }
+  }
+} 
