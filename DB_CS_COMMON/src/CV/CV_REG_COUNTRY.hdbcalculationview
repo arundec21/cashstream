@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CASHSTREAM.DB_CS_COMMON.CV::CV_REG_COUNTRY" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="CV_REG_COUNTRY"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="CASHSTREAM.DB_CS_COMMON::CDS_REG_COUNTRY.Entity_1">
+    <resourceUri>CASHSTREAM.DB_CS_COMMON::CDS_REG_COUNTRY.Entity_1</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="CASHSTREAM.DB_CS_COMMON::CDS_REG_COUNTRY.Entity_1">
+  <attributes>
+    <attribute id="REGION" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="REGION"/>
+      <keyMapping columnObjectName="CDS_REG_COUNTRY.Entity_1" columnName="REGION"/>
+    </attribute>
+    <attribute id="COUNTRY" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="COUNTRY"/>
+      <keyMapping columnObjectName="CDS_REG_COUNTRY.Entity_1" columnName="COUNTRY"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

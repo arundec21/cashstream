@@ -1,0 +1,10 @@
+namespace CASHSTREAM.DB_CS_COMMON;
+
+context CDS_REG_COUNTRY {
+
+    /*@@layout{"layoutInfo":{"x":-55,"y":60.5}}*/
+    entity Entity_1 {
+        REGION  : String(10);
+        COUNTRY : String(100);
+    };
+};
